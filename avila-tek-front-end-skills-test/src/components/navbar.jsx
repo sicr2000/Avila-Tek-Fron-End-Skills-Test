@@ -13,8 +13,8 @@ export const Navbar = () => {
   // const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className="fixed flex justify-between items-center z-[100] w-screen py-5 font-serif text-black bg-white top-0 left-0">
-      <div className="resp:hidden">
+    <header className="fixed z-[100] w-screen py-5 font-serif text-black bg-white top-0 left-0">
+      <div className="resp:hidden flex justify-between">
         <div className="flex gap-10 ms-32">
           <img src="/Logo.png" className="w-40 h-10 cursor-pointer"></img>
           <ul className="flex gap-10 items-center resp:mt-5 resp:flex-col">
@@ -41,9 +41,9 @@ export const Navbar = () => {
           </button>
         </div>
       </div>
-      <div className="hidden resp:block resp:flex resp:justify-between resp:items-center resp:w-full resp:mx-7">
+      <div className="hidden resp:block resp:flex resp:justify-between resp:items-center resp:mx-7">
         <img src="/Logo.png" className="w-40 h-10 cursor-pointer"></img>
-        <RxHamburgerMenu className="text-2xl"/>
+        <RxHamburgerMenu className="text-2xl" />
       </div>
     </header>
   );

@@ -4,9 +4,12 @@ import "../css/app.css";
 export const App = () => {
   return (
     <>
+      {/* Little space from top */}
       <div className="mt-[6.60rem] resp:hidden"></div>
+
+      {/* First View (Graphic) */}
       <section>
-        <div className="bg-violet-800 m-auto mt-40 resp:mt-0 w-10/12 h-[40rem] rounded-3xl flex flex-col items-center -z-10 resp:w-full resp:rounded-none">
+        <div className="bg-violet-800 m-auto mt-40 resp:mt-0 w-10/12 h-[40rem] resp:h-[42rem] rounded-3xl flex flex-col items-center -z-10 resp:w-full resp:rounded-none">
           <div className="text-center mt-20 resp:mt-40">
             <h2 className="text-white text-7xl resp:text-4xl">
               Grow your users.
@@ -49,11 +52,18 @@ export const App = () => {
               </button>
             </div>
           </div>
-          <div className="w-3/5 resp:w-full flex justify-center items-baseline mt-20">
+          {/* Show on Computer */}
+          <div className="w-3/5 resp:hidden flex justify-center items-baseline mt-20">
             <img src="/Mockup.png" className=""></img>
+          </div>
+          {/* Show on Phone */}
+          <div className="resp:w-full hidden resp:block resp:mt-10">
+            <img src="/Mockup (1).png" className="w-full"></img>
           </div>
         </div>
       </section>
+
+      {/* Integrations */}
       <section className="mt-[30rem] resp:mt-[24rem]">
         <div className="m-auto w-32 text-center text-violet-800 text-lg bg-purple-200/50 rounded-3xl border border-violet-300">
           Integrations
@@ -155,14 +165,16 @@ export const App = () => {
           </div>
         </div>
       </section>
+
+      {/* Give us a shot */}
       <section>
-        <div className="bg-violet-800 m-auto mt-40 w-10/12 resp:w-11/12 h-[27rem] resp:h-[40rem] rounded-3xl flex resp:flex-col justify-between">
+        <div className="bg-violet-800 m-auto mt-40 resp:mt-36 w-10/12 resp:w-11/12 h-[27rem] resp:h-[40rem] rounded-3xl flex resp:flex-col justify-between">
           <div className="mx-20 my-32 resp:my-12 resp:mx-7">
             <h2 className="text-white text-4xl">Give us a shot</h2>
             <p className="text-white text-xl mt-5">
               Join over 4,000+ startups already growing with Untitled.
             </p>
-            <div className="mt-10 flex gap-4">
+            <div className="mt-10 flex gap-4 resp:hidden">
               <button className="bg-white p-3 font-semibold rounded-lg hover:bg-neutral-200 transition duration-300">
                 Learn more
               </button>
@@ -170,18 +182,28 @@ export const App = () => {
                 Get started
               </button>
             </div>
+            <div className="mt-10 resp:flex resp:flex-col gap-4 hidden resp:block">
+              <button className="bg-violet-600 text-white p-3 font-semibold rounded-lg hover:bg-violet-700 transition duration-300">
+                Get started
+              </button>
+              <button className="bg-white p-3 font-semibold rounded-lg hover:bg-neutral-200 transition duration-300">
+                Learn more
+              </button>
+            </div>
           </div>
-          <img src="/Image.png" className="rounded-r-3xl"></img>
+          <img src="/Image.png" className="rounded-b-3xl"></img>
         </div>
       </section>
-      <section className="mt-24">
+
+      {/* Features */}
+      <section className="mt-24 resp:mt-44">
         <div className="m-auto w-24 text-center text-violet-800 text-lg bg-purple-200/50 rounded-3xl border border-violet-300">
           Features
         </div>
-        <h2 className="text-4xl text-center mt-6">
+        <h2 className="text-4xl text-center mt-6 resp:text-3xl resp:mx-7">
           Cutting-edge features for advanced analytics
         </h2>
-        <div className="w-[45rem] m-auto text-center text-lg">
+        <div className="w-[45rem] resp:w-11/12 m-auto text-center text-lg">
           <p className="mt-5">
             Powerful, self-serve product and growth analytics to help you
             convert, engage, and retain more users. Trusted by over 4,000
@@ -233,17 +255,23 @@ export const App = () => {
           </div>
         </div>
       </section>
-      <section className="bg-neutral-100/75 mt-20 flex justify-center">
-        <div className="p-32">
-          <h2 className="text-5xl text-bold z-10">
+
+      {/* Start free trial */}
+      <section className="bg-neutral-100/75 mt-20 flex resp:flex-col justify-center">
+        <div className="p-32 resp:p-10">
+          <h2 className="text-5xl resp:hidden text-bold z-10">
             No long-term contracts.
             <br />
             No catches.
           </h2>
-          <p className="mt-10 text-xl text-neutral-500">
+          <h2 className="text-3xl hidden resp:block text-bold z-10">
+            No long-term contracts. No catches.
+          </h2>
+          <p className="mt-10 resp:mt-7 text-xl text-neutral-500">
             Start your 30-day free trial today.
           </p>
-          <div className="mt-10 flex gap-4">
+          {/* Show on Computer */}
+          <div className="mt-10 resp:hidden flex gap-4">
             <button className="bg-white p-3 font-semibold border border-neutral-200 rounded-lg hover:bg-neutral-200 transition duration-300">
               Learn more
             </button>
@@ -251,8 +279,19 @@ export const App = () => {
               Get started
             </button>
           </div>
+          {/* Show on Phone */}
+          <div className="mt-10 hidden resp:block resp:flex resp:flex-col resp:gap-3">
+          <button className="bg-violet-600 text-white p-3 font-semibold rounded-lg hover:bg-violet-700 transition duration-300">
+              Get started
+            </button>
+            <button className="bg-white p-3 font-semibold border border-neutral-200 rounded-lg hover:bg-neutral-200 transition duration-300">
+              Learn more
+            </button>
+            
+          </div>
         </div>
-        <div className="flex flex-col gap-4 py-20">
+        {/* Show on Computer */}
+        <div className="flex flex-col gap-4 py-20 resp:hidden">
           <div className="flex justify-center gap-4 items-baseline">
             <img src="/Image (1).png" className="h-40"></img>
             <img src="/Image (2).png"></img>
@@ -263,25 +302,35 @@ export const App = () => {
             <img src="/Image (5).png" className="h-40"></img>
           </div>
         </div>
+        {/* Show on Phone */}
+        <div className="resp:flex resp:flex-col resp:mb-10 resp:gap-2 py-10 px-6 hidden resp:block">
+          <img src="/Image (7).png"></img>
+          <img src="/Image (8).png"></img>
+          <img src="/Image (9).png"></img>
+          <img src="/Image (10).png"></img>
+          <img src="/Image (11).png"></img>
+        </div>
       </section>
-      <section className="mt-24">
+
+      {/* Frequently asked questions */}
+      <section className="mt-24 resp:mt-10">
         <h2 className="text-4xl text-center mt-6">
           Frequently asked questions
         </h2>
-        <div className="w-[45rem] m-auto text-center text-lg">
+        <div className="w-[45rem] resp:w-11/12 m-auto text-center text-lg">
           <p className="mt-5 text-xl">
             Everything you need to know about the product and billing.
           </p>
         </div>
-        <div className="w-[49rem] m-auto mt-20 flex flex-col items-center">
+        <div className="w-[49rem] resp:w-11/12 m-auto mt-20 flex flex-col items-center">
           <div className="flex gap-7 border-b-2 border-neutral-300/75 pb-8 mb-8">
-            <div>
+            <div className="resp:w-11/12">
               <p className="font-semibold text-xl">
                 Is there a free trial available?
               </p>
               <p className="mt-4">
                 Yes, you can try us for free for 30 days. If you want, we’ll
-                provide you with a free, personalized <br></br> 30-minute
+                provide you with a free, personalized <br className="resp:hidden"></br> 30-minute
                 onboarding call to get you up and running as soon as possible.
               </p>
             </div>
@@ -327,7 +376,7 @@ export const App = () => {
               <img src="/plus-circle.png" className="h-6 cursor-pointer"></img>
             </div>
           </div>
-          <div className="flex justify-between gap-7 border-b-2 border-neutral-300/75 pb-8 mb-8 w-full">
+          <div className="flex justify-between gap-7  pb-8 mb-8 w-full">
             <div>
               <p className="font-semibold text-xl">
                 How do I change my account email?
@@ -339,14 +388,15 @@ export const App = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="bg-violet-900 m-auto mt-40 w-10/12 h-[30rem] rounded-3xl flex justify-between">
-          <img src="/Image (6).png" className="rounded-l-3xl"></img>
 
-          <div className="mx-16 my-24">
+      {/* Renee Wells Rating and Comment */}
+      <section>
+        <div className="bg-violet-900 m-auto mt-40 resp:mt-20 w-10/12 h-[30rem] resp:h-[46rem] rounded-3xl flex resp:flex-col justify-between">
+          <img src="/Image (6).png" className="sm:rounded-l-3xl resp:rounded-t-3xl "></img>
+          <div className="mx-16 my-24 resp:mt-10 resp:mx-7">
             <img src="/Stars.png"></img>
-            <h2 className="text-white text-4xl mt-7">
-              Love the simplicity of the service <br></br> and the prompt
+            <h2 className="text-white text-4xl resp:text-2xl mt-7">
+              Love the simplicity of the service <br className="resp:hidden"></br> and the prompt
               customer support. We can’t imagine working without it.
             </h2>
             <p className="text-white text-xl font-semibold mt-10">
@@ -358,7 +408,6 @@ export const App = () => {
           </div>
         </div>
       </section>
-      <section className="mt-40"></section>
     </>
   );
 };
