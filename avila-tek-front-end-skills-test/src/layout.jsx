@@ -2,6 +2,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { App } from "./views/App.jsx";
+import { Navbar } from "./components/navbar.jsx";
 
 import injectContext from "./store/appContext.jsx";
 
@@ -14,6 +15,7 @@ const Layout = () => {
           path="/"
           element={
             <>
+              <Navbar />
               <App />
             </>
           }
