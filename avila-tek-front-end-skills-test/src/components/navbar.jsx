@@ -5,6 +5,7 @@
 // import { VscAccount } from "react-icons/vsc";
 // import { IoMdHeartEmpty } from "react-icons/io";
 // import { SideBar } from "./Sidebar";
+import { RxHamburgerMenu } from "react-icons/rx";
 import "../css/app.css";
 
 export const Navbar = () => {
@@ -12,28 +13,38 @@ export const Navbar = () => {
   // const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className="fixed flex justify-between items-center z-[100] w-screen py-5 font-serif text-black bg-white top-0 left-0 transition duration-300">
-        <div className="flex ms-10 ">
-          <img src="/Logo.png"></img>
-          <ul className="flex items-center resp:mt-5 resp:flex-col">
-            <li className="my-2.5">Home</li>
-            <li className="my-2.5">Products</li>
-            <li className="my-2.5">Resources</li>
-            <li className="my-2.5">Pricing</li>
+    <header className="fixed flex justify-between items-center z-[100] w-screen py-5 font-serif text-black bg-white top-0 left-0">
+      <div className="resp:hidden">
+        <div className="flex gap-10 ms-32">
+          <img src="/Logo.png" className="w-40 h-10 cursor-pointer"></img>
+          <ul className="flex gap-10 items-center resp:mt-5 resp:flex-col">
+            <li className="my-2.5 hover:text-violet-800 transition duration-300 cursor-pointer font-normal">
+              Home
+            </li>
+            <li className="my-2.5 hover:text-violet-800 transition duration-300 cursor-pointer font-normal">
+              Products
+            </li>
+            <li className="my-2.5 hover:text-violet-800 transition duration-300 cursor-pointer font-normal">
+              Resources
+            </li>
+            <li className="my-2.5 hover:text-violet-800 transition duration-300 cursor-pointer font-normal">
+              Pricing
+            </li>
           </ul>
         </div>
-        <ul className="flex items-center resp:mt-5 resp:flex-col">
-          <li className="my-2.5">
-            <button className="w-40 hover:bg-cyan-300 dark:hover:bg-cyan-300 transition duration-300 dark:hover:text-white text-xl p-2 text-white dark:text-black ml-6 hover:text-black bg-black dark:bg-white rounded-full resp:dark:bg-gray-100 resp:m-0 resp:border resp:border-gray-400 resp:dark:hover:text-gray-black resp:dark:hover:bg-gray-200">
-              Login
-            </button>
-          </li>
-          <li className="my-2.5">
-            <button className="hover:bg-cyan-300 dark:hover:bg-cyan-300 transition duration-300 dark:hover:text-white hover:text-black w-40 text-xl p-2 text-white dark:text-black rounded-full bg-black dark:bg-white ml-4 resp:dark:bg-gray-100 resp:m-0 resp:border resp:border-gray-400 resp:dark:hover:text-gray-black resp:dark:hover:bg-gray-200">
-              Signup
-            </button>
-          </li>
-        </ul>
+        <div className="flex gap-10 me-36">
+          <button className="font-semibold hover:text-violet-800 transition duration-300 rounded-xl py-3 px-5">
+            Log in
+          </button>
+          <button className="bg-violet-800 hover:bg-violet-900 transition duration-300 text-white rounded-xl py-3 px-5 ">
+            Sign up
+          </button>
+        </div>
+      </div>
+      <div className="hidden resp:block resp:flex resp:justify-between resp:items-center resp:w-full resp:mx-7">
+        <img src="/Logo.png" className="w-40 h-10 cursor-pointer"></img>
+        <RxHamburgerMenu className="text-2xl"/>
+      </div>
     </header>
   );
 };
