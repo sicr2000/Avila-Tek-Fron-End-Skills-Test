@@ -22,13 +22,18 @@ export const FirstViewGraphic = () => {
           <div className="mt-5 resp:mt-10">
             {/* Show on Computer */}
             <div className="resp:hidden">
-              <input
-                className="w-[15rem] rounded-lg py-2 px-4"
-                placeholder="Enter your email"
-              ></input>
-              <button className="bg-[#7F56D9] hover:bg-[#714dbe] transition duration-300 text-white rounded-lg py-3 px-5 ms-3">
-                Get started
-              </button>
+              <div className="flex">
+                <div className="flex justify-end items-center">
+                  <input
+                    className="w-[15rem] rounded-lg py-2 px-4"
+                    placeholder="Enter your email"
+                  ></input>
+                  <img src="/Help icon.png" className="absolute mr-3"></img>
+                </div>
+                <button className="bg-[#7F56D9] hover:bg-[#714dbe] transition duration-300 text-white rounded-lg py-3 px-5 ms-3">
+                  Get started
+                </button>
+              </div>
               <p className="text-white mt-1">
                 We care about your data ir our{" "}
                 <a className="cursor-pointer underline hover:text-neutral-300 transition duration-300">
@@ -39,10 +44,13 @@ export const FirstViewGraphic = () => {
             </div>
             {/* Show on Phone */}
             <div className="hidden resp:block mx-5">
-              <input
-                className="rounded-lg py-3 px-4 w-full"
-                placeholder="Enter your email"
-              ></input>
+              <div className="flex justify-end items-center relative">
+                <input
+                  className="rounded-lg py-3 px-4 w-full"
+                  placeholder="Enter your email"
+                ></input>
+                <img src="/Help icon.png" className="absolute mr-3"></img>
+              </div>
               <p className="text-white mt-1">
                 We care about your data ir our{" "}
                 <a className="cursor-pointer underline hover:text-neutral-300 transition duration-300">
@@ -56,7 +64,7 @@ export const FirstViewGraphic = () => {
             </div>
           </div>
           {/* Show on Computer */}
-          <div className="w-3/5 resp:hidden flex justify-center items-baseline mt-20">
+          <div className="w-4/5 resp:hidden flex justify-center items-baseline mt-20">
             <img src="/Mockup.png" className=""></img>
           </div>
           {/* Show on Phone */}
