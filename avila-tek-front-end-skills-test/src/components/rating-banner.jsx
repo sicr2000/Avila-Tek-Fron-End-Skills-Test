@@ -3,7 +3,7 @@ export const RatingBanner = () => {
     <>
       {/*Rating Banner */}
       <section>
-        <div className="bg-violet-900 m-auto mt-40 resp:mt-20 w-10/12 h-[30rem] resp:h-[46rem] rounded-3xl flex resp:flex-col justify-between">
+        <div className="bg-[#53389E] m-auto mt-40 resp:mt-20 w-10/12 h-[30rem] resp:h-[46rem] rounded-3xl flex resp:flex-col justify-between">
           <img
             src="/Image (6).png"
             className="sm:rounded-l-3xl resp:rounded-t-3xl "

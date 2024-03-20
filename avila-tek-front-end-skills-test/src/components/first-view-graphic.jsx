@@ -3,7 +3,7 @@ export const FirstViewGraphic = () => {
     <>
       {/* First View (Graphic) */}
       <section>
-        <div className="bg-violet-800 m-auto mt-40 resp:mt-0 w-10/12 h-[40rem] resp:h-[42rem] rounded-3xl flex flex-col items-center -z-10 resp:w-full resp:rounded-none">
+        <div className="bg-[#53389E] m-auto mt-40 resp:mt-0 w-10/12 h-[40rem] resp:h-[42rem] rounded-3xl flex flex-col items-center -z-10 resp:w-full resp:rounded-none">
           <div className="text-center mt-20 resp:mt-40">
             <h2 className="text-white text-7xl resp:text-4xl">
               Grow your users.
@@ -26,7 +26,7 @@ export const FirstViewGraphic = () => {
                 className="w-[15rem] rounded-lg py-2 px-4"
                 placeholder="Enter your email"
               ></input>
-              <button className="bg-violet-600 hover:bg-violet-700 transition duration-300 text-white rounded-lg py-3 px-5 ms-3">
+              <button className="bg-[#7F56D9] hover:bg-[#714dbe] transition duration-300 text-white rounded-lg py-3 px-5 ms-3">
                 Get started
               </button>
               <p className="text-white mt-1">

@@ -3,7 +3,7 @@ export const GetStartedBanner = () => {
     <>
       {/* Get Started Banner */}
       <section>
-        <div className="bg-violet-800 m-auto mt-40 resp:mt-36 w-10/12 resp:w-11/12 h-[27rem] resp:h-[40rem] rounded-3xl flex resp:flex-col justify-between">
+        <div className="bg-[#53389E] m-auto mt-40 resp:mt-36 w-10/12 resp:w-11/12 h-[27rem] resp:h-[40rem] rounded-3xl flex resp:flex-col justify-between">
           <div className="mx-20 my-32 resp:my-12 resp:mx-7">
             <h2 className="text-white text-4xl">Give us a shot</h2>
             <p className="text-white text-xl mt-5">
@@ -13,7 +13,7 @@ export const GetStartedBanner = () => {
               <button className="bg-white p-3 font-semibold rounded-lg hover:bg-neutral-200 transition duration-300">
                 Learn more
               </button>
-              <button className="bg-violet-600 text-white p-3 font-semibold rounded-lg hover:bg-violet-700 transition duration-300">
+              <button className="bg-[#7F56D9] hover:bg-[#714dbe] text-white p-3 font-semibold rounded-lg transition duration-300">
                 Get started
               </button>
             </div>

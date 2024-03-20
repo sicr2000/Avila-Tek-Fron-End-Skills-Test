@@ -18,25 +18,25 @@ export const Navbar = () => {
         <div className="flex gap-10 ms-32">
           <img src="/Logo.png" className="w-40 h-10 mt-1 cursor-pointer"></img>
           <ul className="flex gap-10 items-center resp:mt-5 resp:flex-col">
-            <li className="my-2.5 hover:text-violet-800 transition duration-300 cursor-pointer font-normal">
+            <li className="my-2.5 hover:text-[#714dbe] transition duration-300 cursor-pointer font-normal">
               Home
             </li>
-            <li className="my-2.5 hover:text-violet-800 transition duration-300 cursor-pointer font-normal">
+            <li className="my-2.5 hover:text-[#714dbe] transition duration-300 cursor-pointer font-normal">
               Products
             </li>
-            <li className="my-2.5 hover:text-violet-800 transition duration-300 cursor-pointer font-normal">
+            <li className="my-2.5 hover:text-[#714dbe] transition duration-300 cursor-pointer font-normal">
               Resources
             </li>
-            <li className="my-2.5 hover:text-violet-800 transition duration-300 cursor-pointer font-normal">
+            <li className="my-2.5 hover:text-[#714dbe] transition duration-300 cursor-pointer font-normal">
               Pricing
             </li>
           </ul>
         </div>
         <div className="flex gap-10 me-36">
-          <button className="font-semibold hover:text-violet-800 transition duration-300 rounded-xl py-3 px-5">
+          <button className="font-semibold hover:text-[#714dbe] transition duration-300 rounded-xl py-3 px-5">
             Log in
           </button>
-          <button className="bg-violet-800 hover:bg-violet-900 transition duration-300 text-white rounded-xl py-3 px-5 ">
+          <button className="bg-[#7F56D9] hover:bg-[#714dbe] transition duration-300 text-white rounded-xl py-3 px-5 ">
             Sign up
           </button>
         </div>
