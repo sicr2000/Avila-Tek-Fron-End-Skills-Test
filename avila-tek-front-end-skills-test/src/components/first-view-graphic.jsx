@@ -20,6 +20,7 @@ export const FirstViewGraphic = () => {
             </p>
           </div>
           <div className="mt-5 resp:mt-10">
+            {/* Show on Computer */}
             <div className="resp:hidden">
               <input
                 className="w-[15rem] rounded-lg py-2 px-4"
@@ -28,7 +29,15 @@ export const FirstViewGraphic = () => {
               <button className="bg-violet-600 hover:bg-violet-700 transition duration-300 text-white rounded-lg py-3 px-5 ms-3">
                 Get started
               </button>
+              <p className="text-white mt-1">
+                We care about your data ir our{" "}
+                <a className="cursor-pointer underline hover:text-neutral-300 transition duration-300">
+                  privacy policy
+                </a>
+                .
+              </p>
             </div>
+            {/* Show on Phone */}
             <div className="hidden resp:block mx-5">
               <input
                 className="rounded-lg py-3 px-4 w-full"

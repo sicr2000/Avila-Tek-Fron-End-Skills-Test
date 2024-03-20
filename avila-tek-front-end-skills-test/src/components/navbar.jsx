@@ -14,9 +14,9 @@ export const Navbar = () => {
 
   return (
     <header className="fixed z-[100] w-screen py-5 font-serif text-black bg-white top-0 left-0">
-      <div className="resp:hidden flex justify-between">
+      <div className="resp:hidden flex justify-between items-center">
         <div className="flex gap-10 ms-32">
-          <img src="/Logo.png" className="w-40 h-10 cursor-pointer"></img>
+          <img src="/Logo.png" className="w-40 h-10 mt-1 cursor-pointer"></img>
           <ul className="flex gap-10 items-center resp:mt-5 resp:flex-col">
             <li className="my-2.5 hover:text-violet-800 transition duration-300 cursor-pointer font-normal">
               Home
