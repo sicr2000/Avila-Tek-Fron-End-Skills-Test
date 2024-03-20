@@ -50,7 +50,7 @@ export const FirstViewGraphic = () => {
                 </a>
                 .
               </p>
-              <button className="w-full bg-violet-600 hover:bg-violet-700 transition duration-300 text-white rounded-lg py-3 px-5 mt-4">
+              <button className="w-full bg-[#7F56D9] hover:bg-[#714dbe] transition duration-300 text-white rounded-lg py-3 px-5 mt-4">
                 Get started
               </button>
             </div>

@@ -18,7 +18,7 @@ export const GetStartedBanner = () => {
               </button>
             </div>
             <div className="mt-10 resp:flex resp:flex-col gap-4 hidden resp:block">
-              <button className="bg-violet-600 text-white p-3 font-semibold rounded-lg hover:bg-violet-700 transition duration-300">
+              <button className="bg-[#7F56D9] hover:bg-[#714dbe] text-white p-3 font-semibold rounded-lg transition duration-300">
                 Get started
               </button>
               <button className="bg-white p-3 font-semibold rounded-lg hover:bg-neutral-200 transition duration-300">

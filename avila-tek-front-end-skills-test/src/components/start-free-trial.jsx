@@ -26,7 +26,7 @@ export const StartFreeTrial = () => {
           </div>
           {/* Show on Phone */}
           <div className="mt-10 hidden resp:block resp:flex resp:flex-col resp:gap-3">
-            <button className="bg-violet-600 text-white p-3 font-semibold rounded-lg hover:bg-violet-700 transition duration-300">
+            <button className="bg-[#7F56D9] hover:bg-[#714dbe] text-white p-3 font-semibold rounded-lg transition duration-300">
               Get started
             </button>
             <button className="bg-white p-3 font-semibold border border-neutral-200 rounded-lg hover:bg-neutral-200 transition duration-300">
